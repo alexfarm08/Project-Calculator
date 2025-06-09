@@ -1,3 +1,8 @@
+// CALCULATOR VARIABLES 
+let num1 = 0;
+let num2 = 0;
+let operator;
+
 // MAKE FUNCTIONS FOR MATH OPERATIONS
 function add(num1, num2) {
     let value = num1 + num2;
@@ -48,3 +53,20 @@ console.log(divide(5,5));
 console.log(divide(20,3));
 console.log(divide(50,25));
 console.log(divide(200,5));
+
+// OPERATE FUNCTION 
+function operate(num1, num2, operator) {
+    // FIX ME: NEED TO ADD OUT PUT TO CALC SCREEN AFTER BUILDING CALC WITH HTML/CSS
+    if (operator == '+') {
+        add(num1,num2);
+    }
+    else if (operator == '-') {
+        subtract(num1,num2);
+    }
+    else if (operator == '*') {
+        multiply(num1,num2);
+    }
+    else if (operator == '/') {
+        divide(num1,num2);
+    }
+}
