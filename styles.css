@@ -1,3 +1,25 @@
+body {
+    background-color: #5f6062;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #5f6062;
+    color: #ffffff;    
+    margin-bottom: 25px;
+    font-weight: bold;
+    font-family: "Helvetica";
+}
+.calc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
 .calcContainer {
     width: 480px;
     height: 668px;
@@ -62,16 +84,41 @@ button {
     font-family: "Helvetica";
     font-weight: lighter;
     -webkit-font-smoothing: antialiased;
+    cursor: pointer;
+}
+
+.opBtn:hover {
+    background-color: #faa82c;
 }
 
 .opBtn {
     background-color: #ff9e0a;
 }
 
+.numBtn:hover {
+    background-color: #7d7d7d;
+}
+
 .numBtn {
     background-color: #5f6062;
 }
 
+.authBtn:hover {
+    background-color: #3d3d3e;
+}
+
 .authBtn {
     background-color: #3e4143;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #5f6062;
+    color: #ffffff;    
+    margin-bottom: 25px;
+    font-family: "Helvetica";
+    font-weight: lighter;
 }
