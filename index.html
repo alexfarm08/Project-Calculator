@@ -21,42 +21,46 @@
                 <div class="btnContainer">
                     <table>
                         <tr id="row1">
-                            <td><button class="authBtn" id="acBtn">AC</button></td>
-                            <td><button class="authBtn" id="plus-minusBtn">+/-</button></td>
-                            <td><button class="authBtn" id="moduloBtn">%</button></td>
-                            <td><button class="opBtn" id="dividBtn">/</button></td>
+                            <td><button class="operator-btn" id="authBtn" onclick="clearDisplay()">AC</button></td>
+                            <td><button class="operator-btn" id="authBtn" >+/-</button></td>
+                            <td><button class="operator-btn" id="authBtn" onclick="appendToDisplay('%')">%</button></td>
+                            <td><button class="operator-btn" id="opBtn" onclick="appendToDisplay('/')">/</button></td>
                         </tr>
                         <tr id="row2">
-                            <td><button class="numBtn" id="7Btn">7</button></td>
-                            <td><button class="numBtn" id="8Btn">8</button></td>
-                            <td><button class="numBtn" id="9Btn">9</button></td>
-                            <td><button class="opBtn" id="multiplyBtn">X</button></td>
+                            <td><button class="numBtn" onclick="appendToDisplay('7')">7</button></td>
+                            <td><button class="numBtn" onclick="appendToDisplay('8')">8</button></td>
+                            <td><button class="numBtn" onclick="appendToDisplay('9')">9</button></td>
+                            <td><button class="operator-btn" id="opBtn" onclick="appendToDisplay('x')">X</button></td>
                         </tr>
                         <tr id="row3">
-                            <td><button class="numBtn" id="4Btn">4</button></td>
-                            <td><button class="numBtn" id="5Btn">5</button></td>
-                            <td><button class="numBtn" id="6Btn">6</button></td>
-                            <td><button class="opBtn" id="minusBtn">-</button></td>
+                            <td><button class="numBtn" onclick="appendToDisplay('4')">4</button></td>
+                            <td><button class="numBtn" onclick="appendToDisplay('5')">5</button></td>
+                            <td><button class="numBtn" onclick="appendToDisplay('6')">6</button></td>
+                            <td><button class="operator-btn" id="opBtn" onclick="appendToDisplay('-')">-</button></td>
                         </tr>
                         <tr id="row4">
-                            <td><button class="numBtn" id="1Btn">1</button></td>
-                            <td><button class="numBtn" id="2Btn">2</button></td>
-                            <td><button class="numBtn" id="3Btn">3</button></td>
-                            <td><button class="opBtn" id="plusBtn">+</button></td>
+                            <td><button class="numBtn" onclick="appendToDisplay('1')">1</button></td>
+                            <td><button class="numBtn" onclick="appendToDisplay('2')">2</button></td>
+                            <td><button class="numBtn" onclick="appendToDisplay('3')">3</button></td>
+                            <td><button class="operator-btn" id="opBtn" onclick="appendToDisplay('+')">+</button></td>
                         </tr>
                         <tr id="row5">
-                            <td colspan="2"><button class="numBtn" id="0Btn">0</button></td>
-                            <td><button class="numBtn" id="comaBtn">.</button></td>
-                            <td><button class="opBtn" id="equalBtn">=</button></td>
+                            <td colspan="2"><button class="numBtn" onclick="appendToDisplay('0')">0</button></td>
+                            <td><button class="numBtn" onclick="appendToDisplay('.')">.</button></td>
+                            <td><button id="opBtn" onclick="calculate()" >=</button></td>
                         </tr>
                     </table>
                 </div>
             </div>
         </section>
         <section class="contact">
-            <h2>Contact</h2>
+            <section class="link-imgs1">
+                <a href="https://github.com/alexfarm08"><img alt="github logo" src="imgs/github-142-svgrepo-com.svg" height="25px" width="25px"></a>
+            </section>
+            <section class="link-imgs2">
+                <a href="https://www.linkedin.com/in/alexander-armstrong-9913a5368/"><img id="link-in" alt="linked in logo" src="imgs/linkedin-svgrepo-com.svg" height="32px" width="32px"></a>
+            </section>
         </section>
     </main>
-    <footer></footer>
 </body>
 </html>

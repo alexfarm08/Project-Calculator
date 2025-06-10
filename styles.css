@@ -8,7 +8,7 @@ header {
     align-items: center;
     justify-content: center;
     background-color: #5f6062;
-    color: #ffffff;    
+    color: #ff9e0a;    
     margin-bottom: 25px;
     font-weight: bold;
     font-family: "Helvetica";
@@ -34,6 +34,8 @@ header {
     height: 165px;
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
 .screen-part {
@@ -47,6 +49,8 @@ header {
     font-size: 65px;
     font-family: "Helvetica";
     font-weight: lighter;
+    padding-right: 16px;
+    padding-bottom: 16px;
 }
 
 .btnContainer {
@@ -87,11 +91,11 @@ button {
     cursor: pointer;
 }
 
-.opBtn:hover {
+#opBtn:hover {
     background-color: #faa82c;
 }
 
-.opBtn {
+#opBtn {
     background-color: #ff9e0a;
 }
 
@@ -103,11 +107,11 @@ button {
     background-color: #5f6062;
 }
 
-.authBtn:hover {
+#authBtn:hover {
     background-color: #3d3d3e;
 }
 
-.authBtn {
+#authBtn {
     background-color: #3e4143;
 }
 
@@ -117,8 +121,11 @@ button {
     align-items: center;
     justify-content: center;
     background-color: #5f6062;
-    color: #ffffff;    
-    margin-bottom: 25px;
+    color: #ff9e0a;    
+    margin-top: 30px;
     font-family: "Helvetica";
     font-weight: lighter;
 }
+
+
+
